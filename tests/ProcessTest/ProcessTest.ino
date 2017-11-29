@@ -22,6 +22,12 @@ void setup() {
   // Bridge.begin(Serial, BRIDGE_BAUDRATE);
   // Initialize Serial
   Console.begin();
+  // Uncomment the following line to enable buffering:
+  // - better transmission speed and efficiency
+  // - needs to call Console.flush() to ensure that all
+  //   transmitted data is sent
+  //Console.buffer(64);  
+  
   delay(5000);
   // run various example processes
   runCurl();
